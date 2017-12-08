@@ -1,0 +1,14 @@
+function cal(docal:MouseEvent):void					
+	{									
+		var a :int;	     //รับค่า
+		var b :int; 	 //นับรอบ
+		var c :int;	     //ผลคูณ
+		a =int(num1.text);
+		b = 2;
+		while(b<=12){
+			c=a*b;
+			multiple.text = multiple.text+String(a)+" x "+String(b)+" = "+String(c)+"\n";
+			b++;
+		}
+	}
+btn1.addEventListener(MouseEvent.CLICK,cal)
